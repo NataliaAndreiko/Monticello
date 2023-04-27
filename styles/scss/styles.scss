@@ -1,0 +1,67 @@
+@import url("../css/reset.css");
+@import url("../css/swipers.css");
+
+@mixin dispFlex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin align-items($align) {
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+@mixin justify-content($justify) {
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    @include dispFlex();
+}
+
+.social {
+    @include dispFlex();
+    gap: 20px;
+
+    &-item {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.start-page__header {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    .wrapper {
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+
+    &-nav {
+        &-list {
+            @include dispFlex();
+            gap: 70px;
+        }
+
+        &-item {
+            list-style-type: circle;
+            color: #fff;
+            font-size: 22px;
+            &:hover {
+                list-style-type: disc;
+            }
+        }
+
+        &-link {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}

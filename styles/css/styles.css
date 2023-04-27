@@ -1,0 +1,44 @@
+@import url("../css/reset.css");
+@import url("../css/swipers.css");
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.start-page__header {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+}
+.start-page__header .wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+.start-page__header-nav-list {
+  display: flex;
+  gap: 70px;
+}
+.start-page__header-nav-item {
+  list-style-type: circle;
+  color: #fff;
+  font-size: 22px;
+}
+.start-page__header-nav-item:hover {
+  list-style-type: disc;
+}
+.start-page__header-nav-link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
