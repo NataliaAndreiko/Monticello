@@ -2,6 +2,8 @@
 @import url("../css/swipers.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 
 @mixin dispFlex() {
     display: -webkit-box;
@@ -17,6 +19,11 @@
     -webkit-box-pack: $justify;
     -ms-flex-pack: $justify;
     justify-content: $justify;
+}
+
+* {
+    scroll-behavior: smooth;
+    transition: all .1s ease-in;
 }
 
 .wrapper {
@@ -44,7 +51,7 @@
 
 .start-page {
     position: relative;
-    
+
     &__header {
         position: absolute;
         z-index: 10;
@@ -92,6 +99,7 @@
         bottom: 0;
         margin: auto;
         height: 120px;
+        width: 1170px;
 
         &-title {
             font-family: "Montserrat";
