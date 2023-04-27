@@ -1,6 +1,8 @@
 @import url("../css/reset.css");
 @import url("../css/swipers.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
 @mixin dispFlex() {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,40 +30,105 @@
     gap: 20px;
 
     &-item {
+        cursor: pointer;
         width: 40px;
         height: 40px;
+        border-radius: 50%;
+        outline: 1px solid #fff;
+
+        &:hover {
+            outline: 2px solid #fff;
+        }
     }
 }
 
-.start-page__header {
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    right: 0;
-    .wrapper {
-        @include align-items(center);
-        @include justify-content(space-between);
-    }
+.start-page {
+    position: relative;
+    
+    &__header {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
 
-    &-nav {
-        &-list {
-            @include dispFlex();
-            gap: 70px;
+        .wrapper {
+            @include align-items(center);
+            @include justify-content(space-between);
         }
 
-        &-item {
-            list-style-type: circle;
-            color: #fff;
-            font-size: 22px;
-            &:hover {
-                list-style-type: disc;
+        &-nav {
+            &-list {
+                @include dispFlex();
+                gap: 70px;
+            }
+
+            &-item {
+                list-style: url("../../assets/icons/marker.svg");
+                color: #fff;
+
+                &:hover {
+                    list-style: url("../../assets/icons/hover_marker.svg");
+                }
+            }
+
+            &-link {
+                font-family: "Source Sans Pro", sans-serif;
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-decoration: none;
             }
         }
+    }
 
-        &-link {
-            color: #fff;
+    &__message {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 120px;
+
+        &-title {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 80px;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &-subtitle {
+            font-family: "Montserrat";
             font-weight: 400;
-            font-size: 14px;
+            font-size: 18px;
+            letter-spacing: 0.3em;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+    }
+
+    &__slider {
+        position: absolute;
+        z-index: 10;
+        bottom: 50px;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: 1px solid #fff;
+
+        &:hover {
+            outline: 2px solid #fff;
         }
     }
 }
