@@ -1,40 +1,39 @@
 html,
 body {
-  position: relative;
-  height: 100%;
-  background: #FFFFFF;
+    position: relative;
+    height: 100%;
+    background: #ffffff;
 }
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+    background: #eee;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .swiper {
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 
 .start-page__swiper .swiper-pagination-bullet {
     background-color: transparent;
@@ -44,5 +43,48 @@ body {
 }
 
 .start-page__swiper .swiper-pagination-bullet-active {
-    background-color: #FFF;
+    background-color: #fff;
+}
+
+.news {
+    position: relative;
+}
+.news__swiper.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.news__swiper .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    margin: 0 40px !important;
+}
+
+.news__swiper .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+
+.swiper-button-next {
+    background-image: url("../../assets/icons/Right.svg");
+    z-index: 10;
+    position: absolute;
+}
+
+.swiper-button-prev {
+    background-image: url("../../assets/icons/Left.svg");
+    z-index: 10;
+    position: absolute;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
 }

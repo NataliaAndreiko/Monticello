@@ -243,3 +243,102 @@
         margin-bottom: 170px;
     }
 }
+
+.news {
+    padding: 120px 0;
+    background-image: url("../..//assets/images/slider_background.png");
+    background-size: cover;
+    width: 100vw;
+
+    &-title {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 44px;
+        text-align: center;
+        color: #ffffff;
+        margin: 30px 0 90px;
+    }
+
+    .delim {
+        border: 1px solid #ffffff;
+        width: 100px;
+    }
+
+    .swiper-wrapper {
+        width: 1170px;
+        margin: 0 auto;
+        @include dispFlex();
+    }
+
+    .swiper-slide {
+        width: 370px !important;
+        height: 514px;
+    }
+
+    .wrapper {
+        @include flex-direction-column(column);
+        @include align-items(center);
+        width: 1370px;
+        height: 730px;
+    }
+
+    &__item {
+        width: 370px;
+        @include dispFlex();
+        @include flex-direction-column(column);
+        @include align-items(flex-start);
+
+        &-title {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 22px;
+            color: #2c4058;
+            text-align: start;
+            margin: 30px 20px 15px;
+        }
+
+        &-text {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 18px;
+            color: #2c4058;
+            text-align: start;
+            margin: 15px 20px 40px;
+            height: 40px;
+            overflow: hidden;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+        }
+
+        &-publisher {
+            @include dispFlex();
+            @include flex-direction-row(row);
+            @include align-items(center);
+            margin: 0 20px 30px;
+            gap: 20px;
+            &-img {
+                display: inline-block;
+                width: 60px !important;
+                height: 60px !important;
+                border-radius: 50%;
+            }
+            &-name {
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 18px;
+                color: #2c4058;
+                text-align: start;
+                margin-bottom: 6px;
+            }
+
+            &-date {
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #55b7ff;
+                text-align: start;
+            }
+        }
+    }
+}
