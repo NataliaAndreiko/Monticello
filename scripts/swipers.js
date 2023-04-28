@@ -5,7 +5,7 @@ let swiper = new Swiper(".start-page__swiper", {
         clickable: true,
     },
     autoplay: {
-        delay: 5000,
+        delay: 4000,
     },
     loop: true,
 });

@@ -2,8 +2,8 @@
 @import url("../css/swipers.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 @mixin dispFlex() {
     display: -webkit-box;
@@ -21,9 +21,23 @@
     justify-content: $justify;
 }
 
+@mixin flex-direction-row($row) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $row;
+    flex-direction: $row;
+}
+
+@mixin flex-direction-column($column) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $column;
+    flex-direction: $column;
+}
+
 * {
     scroll-behavior: smooth;
-    transition: all .1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .wrapper {
@@ -138,5 +152,94 @@
         &:hover {
             outline: 2px solid #fff;
         }
+    }
+}
+
+.projects {
+    padding: 100px 0 150px;
+    .wrapper {
+        @include flex-direction-column(column);
+        @include align-items(center);
+    }
+
+    .delim {
+        border: 1px solid #2c4058;
+        width: 100px;
+    }
+
+    &-title {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 44px;
+        text-align: center;
+        color: #2c4058;
+        margin: 30px 0 150px;
+    }
+
+    &__example {
+        @include dispFlex();
+        @include flex-direction-row(row);
+        @include align-items(flex-end);
+        gap: 70px;
+
+        &:nth-child(2n) {
+            @include flex-direction-row(row-reverse);
+        }
+
+        &-content {
+            margin-bottom: 20px;
+        }
+
+        &-sup-title {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 22px;
+            color: #2c4058;
+        }
+        &-title {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+            color: #2c4058;
+        }
+
+        &-text {
+            font-family: "Open Sans";
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #2c4058;
+            margin: 20px 0 40px;
+        }
+
+        &-more-btn {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 14px;
+            color: #000000;
+            border: 1px solid #2c4058;
+            padding: 16px 40px;
+            background-color: #ffffff;
+            margin: 40px 0 60px;
+
+            &:hover {
+                background-color: #2c405815;
+            }
+        }
+
+        &-location-link {
+            display: block;
+            text-decoration: none;
+            font-family: "Open Sans";
+            font-style: italic;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: #000000;
+        }
+    }
+    &__example:not(:last-child) {
+        margin-bottom: 170px;
     }
 }
