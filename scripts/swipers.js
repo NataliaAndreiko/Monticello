@@ -26,3 +26,6 @@ var swiper2 = new Swiper(".news__swiper", {
     mousewheel: true,
     keyboard: true,
 });
+
+
+
