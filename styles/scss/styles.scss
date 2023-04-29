@@ -263,8 +263,8 @@
         border: 1px solid #ffffff;
     }
 
-    .swiper-wrapper {
-        width: 1170px;
+    .swiper {
+        max-width: 1170px !important;
         margin: 0 auto;
         @include dispFlex();
     }
@@ -282,6 +282,7 @@
     }
 
     &__item {
+        cursor: pointer;
         width: 370px;
         @include dispFlex();
         @include flex-direction-column(column);
@@ -367,9 +368,12 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
 
-        &-item:first-child {
-            grid-column-end: span 2;
-            grid-row-end: span 3;
+        &-item {
+            cursor: pointer;
+            &:first-child {
+                grid-column-end: span 2;
+                grid-row-end: span 3;
+            }
         }
     }
     .more-btn {

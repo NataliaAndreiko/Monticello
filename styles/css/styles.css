@@ -206,8 +206,8 @@
 .news .delim {
   border: 1px solid #ffffff;
 }
-.news .swiper-wrapper {
-  width: 1170px;
+.news .swiper {
+  max-width: 1170px !important;
   margin: 0 auto;
   display: flex;
 }
@@ -222,6 +222,7 @@
   height: 730px;
 }
 .news__item {
+  cursor: pointer;
   width: 370px;
   display: flex;
   flex-direction: column;
@@ -299,6 +300,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+}
+.galery__block-item {
+  cursor: pointer;
 }
 .galery__block-item:first-child {
   grid-column-end: span 2;

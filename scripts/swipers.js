@@ -13,12 +13,12 @@ let swiper = new Swiper(".start-page__swiper", {
 var swiper2 = new Swiper(".news__swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
+    centeredSlides: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
     loop: true,
-    cssMode: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -26,6 +26,3 @@ var swiper2 = new Swiper(".news__swiper", {
     mousewheel: true,
     keyboard: true,
 });
-
-
-

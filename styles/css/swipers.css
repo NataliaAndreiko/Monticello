@@ -67,14 +67,14 @@ body {
 
 .swiper-button-next {
     background-image: url("../../assets/icons/Right.svg");
-    z-index: 10;
     position: absolute;
+    right: 100px;
 }
 
 .swiper-button-prev {
     background-image: url("../../assets/icons/Left.svg");
-    z-index: 10;
     position: absolute;
+    left: 100px;
 }
 
 .swiper-button-prev,
