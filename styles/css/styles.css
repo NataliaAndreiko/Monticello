@@ -440,6 +440,9 @@
   line-height: 27px;
   color: #4b6255;
 }
+.footer__contact-feedback-input:focus {
+  border-bottom: 1px solid #55b7ff;
+}
 .footer__contact-feedback .more-btn {
   margin: 0;
 }
