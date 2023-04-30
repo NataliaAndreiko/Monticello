@@ -13,7 +13,7 @@
     </head>
     <body>
         <section class="start-page">
-            <header class="start-page__header">
+            <header class="start-page__header" id="header">
                 <div class="wrapper">
                     <a href="#">
                         <img src="assets/icons/Logo.png" />
@@ -31,7 +31,7 @@
                             </li>
                             <li class="start-page__header-nav-item">
                                 <a
-                                    href="#projects"
+                                    href="#galery"
                                     class="start-page__header-nav-link"
                                 >
                                     Projects
@@ -46,7 +46,10 @@
                                 </a>
                             </li>
                             <li class="start-page__header-nav-item">
-                                <a href="#" class="start-page__header-nav-link">
+                                <a
+                                    href="#contact"
+                                    class="start-page__header-nav-link"
+                                >
                                     Contact
                                 </a>
                             </li>
@@ -80,12 +83,6 @@
                 </div>
             </header>
 
-            <article class="start-page__message">
-                <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
-                <p class="start-page__message-subtitle">
-                    WE MAKE THE WORLD BEAUTIFUL EVERYDAY
-                </p>
-            </article>
 
             <a href="#projects">
                 <svg class="start-page__slider">
@@ -96,20 +93,50 @@
             <div class="swiper start-page__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
+                        <article class="start-page__message">
+                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
+                            <p class="start-page__message-subtitle">
+                                WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+                            </p>
+                        </article>
                         <img src="assets/images/slider_main_background.png" />
                     </div>
                     <div class="swiper-slide">
+                        <article class="start-page__message">
+                            <h1 class="start-page__message-title">LOREM, IPSUM DOLOR.</h1>
+                            <p class="start-page__message-subtitle">
+                                LOVE YOURSELF
+                            </p>
+                        </article>
                         <img src="assets/images/slider_background.png" />
                     </div>
                     <div class="swiper-slide">
+                        <article class="start-page__message">
+                            <h1 class="start-page__message-title">SOME CONTENT</h1>
+                            <p class="start-page__message-subtitle">
+                                WORLD BEAUTIFUL EVERYDAY
+                            </p>
+                        </article>
                         <img src="assets/images/slider_background_2.png" />
                     </div>
-                    <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
+                        <article class="start-page__message">
+                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
+                            <p class="start-page__message-subtitle">
+                                WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+                            </p>
+                        </article>
                         <img src="assets/images/slider_background.png" />
                     </div>
                     <div class="swiper-slide">
+                        <article class="start-page__message">
+                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
+                            <p class="start-page__message-subtitle">
+                                WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+                            </p>
+                        </article>
                         <img src="assets/images/slider_background_2.png" />
-                    </div>
+                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -125,6 +152,7 @@
                         src="assets/images/example_img2.png"
                         alt="Commerce center img"
                     />
+                    <div class="projects__example-shadow"></div>
 
                     <article class="projects__example-content">
                         <div class="projects__example-content-title">
@@ -140,9 +168,7 @@
                             truth is, our thoughts are very powerful.
                         </p>
 
-                        <button class="more-btn">
-                            MORE DETAILS
-                        </button>
+                        <button class="more-btn">MORE DETAILS</button>
 
                         <a
                             href="https://goo.gl/maps/fXWoVePacs4DDWyf7"
@@ -163,6 +189,9 @@
                         src="assets/images/example_img1.png"
                         alt="Commerce center img"
                     />
+                    <div
+                        class="projects__example-shadow projects__example-shadow--colored"
+                    ></div>
 
                     <article class="projects__example-content">
                         <div class="projects__example-content-title">
@@ -176,7 +205,7 @@
 
                         <p class="projects__example-text">
                             Successful businesses have many things in common,
-                            today we’ll look at the big ‘R’ of recognition and
+                            today we'll look at the big 'R' of recognition and
                             how a digital advertising network may help.
                         </p>
 
@@ -423,31 +452,50 @@
                 <h1 class="galery-title">GALLERY</h1>
 
                 <div class="galery__block">
-                    <img
-                        src="assets/images/galery/galery_item1.png"
-                        alt="galery pick"
-                        class="galery__block-item"
-                    />
-                    <img
-                        src="assets/images/galery/galery_item2.png"
-                        alt="galery pick"
-                        class="galery__block-item"
-                    />
-                    <img
-                        src="assets/images/galery/galery_item3.png"
-                        alt="galery pick"
-                        class="galery__block-item"
-                    />
-                    <img
-                        src="assets/images/galery/galery_item4.png"
-                        alt="galery pick"
-                        class="galery__block-item"
-                    />
-                    <img
-                        src="assets/images/galery/galery_item5.png"
-                        alt="galery pick"
-                        class="galery__block-item"
-                    />
+                    <div class="galery__block-item">
+                        <img
+                            src="assets/images/galery/galery_item1.png"
+                            alt="galery pick"
+                            class="galery__block-item-pick"
+                        />
+                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                    </div>
+
+                    <div class="galery__block-item">
+                        <img
+                            src="assets/images/galery/galery_item2.png"
+                            alt="galery pick"
+                            class="galery__block-item-pick"
+                        />
+                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                    </div>
+
+                    <div class="galery__block-item">
+                        <img
+                            src="assets/images/galery/galery_item3.png"
+                            alt="galery pick"
+                            class="galery__block-item-pick"
+                        />
+                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                    </div>
+
+                    <div class="galery__block-item">
+                        <img
+                            src="assets/images/galery/galery_item4.png"
+                            alt="galery pick"
+                            class="galery__block-item-pick"
+                        />
+                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                    </div>
+
+                    <div class="galery__block-item">
+                        <img
+                            src="assets/images/galery/galery_item5.png"
+                            alt="galery pick"
+                            class="galery__block-item-pick"
+                        />
+                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                    </div>
                 </div>
 
                 <button class="more-btn">MORE DETAILS</button>
@@ -458,44 +506,72 @@
 
         <footer class="footer" id="footer">
             <div class="wrapper">
-                <div class="footer__contact">
+                <div class="footer__contact" id="contact">
                     <div class="delim"></div>
                     <h2 class="footer__contact-title">GET IN TOUCH</h2>
                     <div class="footer__contact-content">
                         <div class="footer__contact-information">
-                            <a href="#" class="footer__contact-information-item">
+                            <a
+                                href="https://goo.gl/maps/mhG174gJiAw6uiT37"
+                                class="footer__contact-information-item"
+                            >
                                 <i
                                     class="fa-sharp fa-solid fa-location-dot"
                                     style="color: #7e5aff"
                                 ></i>
                                 Nolan Extensions Suite 670
                             </a>
-    
-                            <a href="#" class="footer__contact-information-item">
+
+                            <a
+                                href="tel:+0013568682454"
+                                class="footer__contact-information-item"
+                            >
                                 <i
                                     class="fa-solid fa-phone"
                                     style="color: #7e5aff"
                                 ></i>
                                 +001 356-868-2454
                             </a>
-    
-                            <a href="#" class="footer__contact-information-item">
+
+                            <a
+                                href="mailto:montichello@service.com"
+                                class="footer__contact-information-item"
+                            >
                                 <i
                                     class="fa-sharp fa-solid fa-inbox"
                                     style="color: #7e5aff"
                                 ></i>
                                 montichello@service.com
                             </a>
-    
-                            <a href="#" class="footer__contact-information-item">
-                                <i class="fa-regular fa-clock" style="color: #7e5aff"></i>
+
+                            <p class="footer__contact-information-item">
+                                <i
+                                    class="fa-regular fa-clock"
+                                    style="color: #7e5aff"
+                                ></i>
                                 From 07:05AM to 19:30PM
-                            </a>
+                            </p>
                         </div>
                         <form class="footer__contact-feedback">
-                            <input type="text" name="full-name" placeholder="Full name" class="footer__contact-feedback-input">
-                            <input type="mail" name="mail" placeholder="Email" class="footer__contact-feedback-input">
-                            <button type="submit" class="more-btn">SUBMIT</button>
+                            <input
+                                type="text"
+                                name="full-name"
+                                placeholder="Full name"
+                                class="footer__contact-feedback-input"
+                                id="name-input"
+                                required
+                            />
+                            <input
+                                type="mail"
+                                name="mail"
+                                placeholder="Email"
+                                class="footer__contact-feedback-input"
+                                id="mail-input"
+                                required
+                            />
+                            <button type="submit" class="more-btn">
+                                SUBMIT
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -503,7 +579,7 @@
                     <a href="#">
                         <img src="assets/icons/Logo.png" />
                     </a>
-    
+
                     <div class="social">
                         <a href="#">
                             <svg class="social-item">
@@ -512,7 +588,7 @@
                                 ></use>
                             </svg>
                         </a>
-    
+
                         <a href="#">
                             <svg class="social-item">
                                 <use
@@ -537,6 +613,7 @@
             src="https://kit.fontawesome.com/567b3fac36.js"
             crossorigin="anonymous"
         ></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="scripts/swipers.js"></script>
         <script src="scripts/script.js"></script>

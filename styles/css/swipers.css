@@ -65,15 +65,24 @@ body {
     background-color: #ffffff;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    border-radius: 50%;
+}
+
 .swiper-button-next {
     background-image: url("../../assets/icons/Right.svg");
-    position: absolute;
     right: 100px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    outline: 1px solid #fff;
 }
 
 .swiper-button-prev {
     background-image: url("../../assets/icons/Left.svg");
-    position: absolute;
     left: 100px;
 }
 

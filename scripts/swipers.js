@@ -23,6 +23,5 @@ var swiper2 = new Swiper(".news__swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    mousewheel: true,
     keyboard: true,
 });
