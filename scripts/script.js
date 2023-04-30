@@ -1,7 +1,9 @@
 const mailInput = document.getElementById("mail-input");
 const galeryPicks = $(".galery__block-item-pick");
 const picksZooms = $(".zoom-in");
-const header = document.getElementById('header')
+const header = document.getElementById("header");
+const modalImg = document.getElementById("img");
+const closePopup = document.querySelector(".close");
 
 window.addEventListener("scroll", function () {
     if (window.pageYOffset > 0) {
@@ -13,16 +15,33 @@ window.addEventListener("scroll", function () {
 
 //jQuery use for hover effect
 galeryPicks.each(function (i) {
-    $(this).on("mouseover", function () {
+    $(this).on("mouseover", () => {
         $(this).css("filter", "brightness(70%)");
         picksZooms.eq(i).css("display", "block");
     });
 
-    $(this).on("mouseout", function () {
+    $(this).on("mouseout", () => {
         $(this).css("filter", "brightness(100%)");
         picksZooms.eq(i).css("display", "none");
     });
+
+    $(this).click(() => {
+        $(".galery__block-popup").css("display", "block");
+        $("#img").attr("src", $(this).attr("src"));
+    }); 
 });
+
+$(".close").click(() => {
+    console.log('fgdfd');
+    $(".galery__block-popup").css("display", "none");
+});
+
+$(".galery__block-popup").click(() => {
+    console.log('fgdfd');
+    $(".galery__block-popup").css("display", "none");
+});
+0
+
 
 //form validation
 mailInput.onblur = function () {

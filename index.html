@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
+        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
         <link rel="stylesheet" href="styles/css/styles.css" />
         <title>Monticello</title>
     </head>
@@ -83,7 +84,6 @@
                 </div>
             </header>
 
-
             <a href="#projects">
                 <svg class="start-page__slider">
                     <use xlink:href="assets/icons/sprite-icons.svg#Arrow"></use>
@@ -94,7 +94,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <article class="start-page__message">
-                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
+                            <h1 class="start-page__message-title">
+                                SIMPLE &amp; MODERN
+                            </h1>
                             <p class="start-page__message-subtitle">
                                 WE MAKE THE WORLD BEAUTIFUL EVERYDAY
                             </p>
@@ -103,7 +105,9 @@
                     </div>
                     <div class="swiper-slide">
                         <article class="start-page__message">
-                            <h1 class="start-page__message-title">LOREM, IPSUM DOLOR.</h1>
+                            <h1 class="start-page__message-title">
+                                LOREM, IPSUM DOLOR.
+                            </h1>
                             <p class="start-page__message-subtitle">
                                 LOVE YOURSELF
                             </p>
@@ -112,31 +116,15 @@
                     </div>
                     <div class="swiper-slide">
                         <article class="start-page__message">
-                            <h1 class="start-page__message-title">SOME CONTENT</h1>
+                            <h1 class="start-page__message-title">
+                                SOME CONTENT
+                            </h1>
                             <p class="start-page__message-subtitle">
                                 WORLD BEAUTIFUL EVERYDAY
                             </p>
                         </article>
                         <img src="assets/images/slider_background_2.png" />
                     </div>
-                    <!-- <div class="swiper-slide">
-                        <article class="start-page__message">
-                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
-                            <p class="start-page__message-subtitle">
-                                WE MAKE THE WORLD BEAUTIFUL EVERYDAY
-                            </p>
-                        </article>
-                        <img src="assets/images/slider_background.png" />
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="start-page__message">
-                            <h1 class="start-page__message-title">SIMPLE &amp; MODERN</h1>
-                            <p class="start-page__message-subtitle">
-                                WE MAKE THE WORLD BEAUTIFUL EVERYDAY
-                            </p>
-                        </article>
-                        <img src="assets/images/slider_background_2.png" />
-                    </div> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -458,7 +446,11 @@
                             alt="galery pick"
                             class="galery__block-item-pick"
                         />
-                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                        <img
+                            src="assets/icons/zoom-in.svg"
+                            alt="zoom in"
+                            class="zoom-in"
+                        />
                     </div>
 
                     <div class="galery__block-item">
@@ -467,7 +459,11 @@
                             alt="galery pick"
                             class="galery__block-item-pick"
                         />
-                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                        <img
+                            src="assets/icons/zoom-in.svg"
+                            alt="zoom in"
+                            class="zoom-in"
+                        />
                     </div>
 
                     <div class="galery__block-item">
@@ -476,7 +472,11 @@
                             alt="galery pick"
                             class="galery__block-item-pick"
                         />
-                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                        <img
+                            src="assets/icons/zoom-in.svg"
+                            alt="zoom in"
+                            class="zoom-in"
+                        />
                     </div>
 
                     <div class="galery__block-item">
@@ -485,7 +485,11 @@
                             alt="galery pick"
                             class="galery__block-item-pick"
                         />
-                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                        <img
+                            src="assets/icons/zoom-in.svg"
+                            alt="zoom in"
+                            class="zoom-in"
+                        />
                     </div>
 
                     <div class="galery__block-item">
@@ -494,9 +498,17 @@
                             alt="galery pick"
                             class="galery__block-item-pick"
                         />
-                        <img src="assets/icons/zoom-in.svg" alt="zoom in"  class="zoom-in"/>
+                        <img
+                            src="assets/icons/zoom-in.svg"
+                            alt="zoom in"
+                            class="zoom-in"
+                        />
                     </div>
                 </div>
+                <div class="galery__block-popup modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img">
+                  </div>
 
                 <button class="more-btn">MORE DETAILS</button>
             </div>
@@ -562,7 +574,7 @@
                                 required
                             />
                             <input
-                                type="mail"
+                                type="email"
                                 name="mail"
                                 placeholder="Email"
                                 class="footer__contact-feedback-input"
